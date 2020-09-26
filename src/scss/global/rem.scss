@@ -1,0 +1,119 @@
+// "base pixel" default size. all units in v() specified in this base pixels
+$basePx: 4;
+
+// min font size should be used coz WHY THE FUCK CHROME ON MACOS HAS fixed min font size = 6 specified in configs
+$minFontSize: 6;
+
+@function normalizeBasePx($px) {
+  @return $minFontSize * $px;
+}
+
+html {
+  font-size: normalizeBasePx(4px);
+}
+
+body {
+  font-size: initial;
+}
+
+@media screen and (min-width: 306px) {
+  html {
+    font-size: normalizeBasePx(3px);
+  }
+}
+
+
+@media screen and (min-width: 408px) {
+  html {
+    font-size: normalizeBasePx(4px);
+  }
+}
+
+@media screen and (min-width: 570px) {
+  html {
+    font-size: normalizeBasePx(5px);
+  }
+}
+
+// -------- FIX --------------
+@media screen and (min-width: 571px) {
+  html {
+    font-size: normalizeBasePx(3px);
+  }
+}
+
+// ---------------------------
+
+@media screen and (min-width: 882px) {
+  html {
+    font-size: normalizeBasePx(4px);
+  }
+}
+
+
+@media screen and (min-width: 1176px) {
+  html {
+    font-size: normalizeBasePx(4px);
+  }
+}
+
+@media screen and (min-width: 1470px) { // width >= 1470
+  html {
+    font-size: normalizeBasePx(5px);
+  }
+}
+
+// px / base * html:rem = px
+// px / (base + 6) * (html:rem + 6) = px
+
+// Convert pixel units to rems based on base pixel.
+//
+// eg:
+// width: v(40, 4)
+// means we used 10 base pixels
+//
+// on the most berёza ui templates, base pixel equals `4`
+//
+@function v($px, $basePix: $basePx, $minusPx: 0) {
+  $px: $px / $minFontSize;
+
+  @if $minusPx == 0 {
+    @if variable-exists(noRems) {
+      @return ($px - $minusPx) + px;
+    }
+    @return ($px / $basePix) + rem;
+  }
+  @if variable-exists(noRems) {
+    @return $px + px;
+  }
+  @return unquote('calc(' + ($px / $basePix) + 'rem - ' + $minusPx + 'px)');
+}
+
+$tabletBreakpointMaxWidth: 768px;
+$mobileBreakpointMaxWidth: 571px;
+
+// Detect mobile screen
+// used as
+//
+// @include mobile {
+//     ... mobile screen rules ...
+// }
+//
+@mixin mobile {
+  @media (max-width: $mobileBreakpointMaxWidth) {
+    @content;
+  }
+}
+
+// Detect tablet screen
+// used as
+//
+// @include tablet {
+//     ... tablet screen rules ...
+// }
+//
+@mixin tablet {
+  @media (min-width: $mobileBreakpointMaxWidth) and (max-width: $tabletBreakpointMaxWidth) {
+    @content;
+  }
+}
