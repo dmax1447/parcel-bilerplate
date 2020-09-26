@@ -1,19 +1,13 @@
 # Parcel boilerplate
+Фичи внутри:
 
-Minimal boilerplate for parcel powered project
+* Pug
+* Scss
+* Stylelint
+* ESLint
 
-## How to use
+### Скрипты:
 
-Clone and cd into the repository and run `npm install`
-
-### Development mode
-
-```npm run dev```
-
-Open `localhost:1234`
-
-### Production mode
-
-```npm run build```
-
-Serve the `dist` folder.
+`npm run dev` - dev сервер на `localhost:1234`
+`npm run build` - билд в папку `dist`
+`npm run test` - проверка scss и js при помощи stylelint и eslint
