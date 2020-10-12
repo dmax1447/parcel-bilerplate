@@ -3,4 +3,11 @@ extends ../layout/default.pug
 block content
   div(class="layout__content")
     h1 This is main page
-    p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur, aut delectus doloremque doloribus eligendi explicabo facilis impedit laudantium, magni nostrum optio quas qui quisquam quo ratione rerum vel velit voluptates!
+    div
+      h3 observer
+        button(class="btn js-notify") notify subscribers
+    div(class="js-person-mary")
+      h3 mary
+        p(class="js-state") status
+        button(class="btn js-subscribe") subscribe Mary
+        button(class="btn js-unsubscribe") unsubscribe Mary

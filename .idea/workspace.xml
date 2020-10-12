@@ -6,39 +6,20 @@
         <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
         <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
       </path>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:dependabot" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:dependabot" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:npm_and_yarn" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
     </expand>
     <select />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="65e6045c-e27e-4f7b-8cc8-2eb5d905cefe" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/imagemin.config.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/about.pug" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/data/points.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/js/observer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/map.pug" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/header/header.pug" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/header/header.pug" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/header/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/js/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/index.pug" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index.pug" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,6 +57,7 @@
     <property name="node.js.selected.package.stylelint" value="C:\project\parcel-boilerplate\node_modules\stylelint" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+    <property name="settings.editor.selected.configurable" value="terminal" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -99,7 +81,12 @@
       <updated>1601109995926</updated>
       <workItem from="1601109997073" duration="5840000" />
       <workItem from="1601279098886" duration="617000" />
-      <workItem from="1601365403556" duration="1047000" />
+      <workItem from="1601365403556" duration="1096000" />
+      <workItem from="1601719127188" duration="586000" />
+      <workItem from="1601839923985" duration="232000" />
+      <workItem from="1601929070116" duration="597000" />
+      <workItem from="1601930491398" duration="850000" />
+      <workItem from="1602440836908" duration="5333000" />
     </task>
     <task id="LOCAL-00001" summary="добавит новый конфиг с дефолтным лейаутом, обновит зависимости">
       <created>1601114688599</created>
@@ -115,7 +102,14 @@
       <option name="project" value="LOCAL" />
       <updated>1601115190640</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="добавит imagemin в сборку">
+      <created>1601366486842</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1601366486842</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -136,7 +130,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="добавит новый конфиг с дефолтным лейаутом, обновит зависимости" />
     <MESSAGE value="обновит контент" />
-    <option name="LAST_COMMIT_MESSAGE" value="обновит контент" />
+    <MESSAGE value="добавит imagemin в сборку" />
+    <option name="LAST_COMMIT_MESSAGE" value="добавит imagemin в сборку" />
   </component>
   <component name="WindowStateProjectService">
     <state x="482" y="306" key="#Stylelint" timestamp="1601114899865">
@@ -147,6 +142,10 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="516" y="272" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1536.834@0.0.1536.834" timestamp="1601115041063" />
+    <state x="548" y="158" key="FileChooserDialogImpl" timestamp="1602441940617">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="548" y="158" key="FileChooserDialogImpl/0.0.1536.834@0.0.1536.834" timestamp="1602441940617" />
     <state width="1515" height="214" key="GridCell.Tab.0.bottom" timestamp="1601116378642">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
@@ -163,9 +162,13 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state width="1515" height="214" key="GridCell.Tab.0.right/0.0.1536.834@0.0.1536.834" timestamp="1601116378642" />
-    <state x="361" y="150" key="Vcs.Push.Dialog.v2" timestamp="1601114699501">
+    <state x="277" y="62" key="SettingsEditor" timestamp="1602441944571">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="361" y="150" key="Vcs.Push.Dialog.v2/0.0.1536.834@0.0.1536.834" timestamp="1601114699501" />
+    <state x="277" y="62" key="SettingsEditor/0.0.1536.834@0.0.1536.834" timestamp="1602441944571" />
+    <state x="361" y="150" key="Vcs.Push.Dialog.v2" timestamp="1601840060564">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="361" y="150" key="Vcs.Push.Dialog.v2/0.0.1536.834@0.0.1536.834" timestamp="1601840060564" />
   </component>
 </project>
