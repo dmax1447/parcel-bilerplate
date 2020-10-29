@@ -1,0 +1,32 @@
+extends ../layout/default.pug
+
+block content
+  div(class="pattern")
+    h3 Паттерны
+
+    div(class="pattern__item")
+      div(class="pattern__frame")
+        h6 Это наблюдатель - на его действия можно подписаться и он может оповещать подписчиков
+        div(class="pattern__item-controls")
+          input(type="text" class="js-observer-input" placeholder="Введите сообщение")
+          button(class="btn btn-primary js-notify") Оповестить
+
+      div(class="js-person pattern__frame" data-name="Mary")
+        h6 Это подписчик Маша
+        p подписка на сообщения от наблюдателя
+        div(class="pattern__item-controls")
+          button(class="btn btn-primary js-subscribe") Подписаться
+          button(class="btn btn-warning js-unsubscribe") Отписаться
+        div
+          span Сообщение от наблюдателя:
+          span(class="js-state") -
+
+      div(class="js-person pattern__frame" data-name="Petr")
+        h6 Это подписчик Петя
+        p подписка на сообщения от наблюдателя
+        div(class="pattern__item-controls")
+          button(class="btn btn-primary js-subscribe") Подписаться
+          button(class="btn btn-warning js-unsubscribe") Отписаться
+        div
+          span Сообщение от наблюдателя:
+          span(class="js-state") -

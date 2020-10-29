@@ -1,32 +1,41 @@
-import Observer from './observer.js';
+const OPENWEATHER_API_KEY = '414fe36eeafe76808ed4273b65bfceb7';
 
+import Observer from './observer';
+import Person from './person';
+import Singleton from './singleton';
+import axios from 'axios';
+axios.defaults.baseURL = '';
 
-class Person {
-  constructor(name) {
-    this.name = name;
-    this.$el = document.querySelector('.js-person-mary')
-    this.$btnSubscribe = this.$el.querySelector('.js-subscribe');
-    this.$btnUnsubscribe = this.$el.querySelector('.js-unsubscribe');
-    this.$state = this.$el.querySelector('.js-state');
-    console.log('init Mary', this);
-    this.onMessageFromObserver = this.onMessageFromObserver.bind(this);
-  }
-
-  onMessageFromObserver(message) {
-    console.log(`Hello from ${this.name}, received message: "${message}"`)
-  }
+const initWeather = () => {
+  axios.get(`http://api.openweathermap.org/data/2.5/weather?q=Moscow,ru&APPID=${OPENWEATHER_API_KEY}`)
+    .then(resp => {
+      console.log(resp.data);
+    })
 }
 
-const observer = new Observer();
-const mary = new Person('Mary');
 
-mary.$btnSubscribe.addEventListener('click', () => {
-  observer.subscribe('mary', mary.onMessageFromObserver);
-})
+const initObserver = () => {
+  const observer = new Observer();
+  const persons = [...document.querySelectorAll('.js-person')];
+  persons.forEach(item => new Person(item, observer));
+  window.observer = observer;
+  window.person = Person;
+  console.log(Person.instanceCounter);
+}
 
-mary.$btnUnsubscribe.addEventListener('click', () => {
-  observer.ubsubscribe('mary');
-})
+const initSingleton = () => {
+  const first = new Singleton('first')
+  const second = new Singleton('second');
+  const third = new Singleton('third');
 
-window.observer = observer;
-window.mary = mary;
+  third.sayHello();
+}
+
+
+const init = () => {
+  initObserver();
+  // initSingleton();
+}
+
+init();
+

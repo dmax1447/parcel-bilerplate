@@ -1,0 +1,10 @@
+.pattern {
+  &__frame {
+    margin-bottom: 3rem;
+  }
+
+  &__item-controls {
+    display: flex;
+    gap: 1rem;
+  }
+}

@@ -1,13 +1,10 @@
-header {
-  outline: 1px dashed red;
-  margin-bottom: 10px;
-}
+@import './components/page.scss';
+@import './components/menu.scss';
+@import './components/pattern.scss';
+@import './components/map.scss';
+@import './components/swiper.scss';
 
-main {
-  outline: 1px dashed blue;
-  margin-bottom: 10px;
-}
 
-footer {
-  outline: 1px dashed green;
-}
+
+
+

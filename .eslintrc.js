@@ -13,5 +13,8 @@ module.exports = {
         "sourceType": "module"
     },
     "rules": {
+      "babel/semi": 1,
+      "babel/no-unused-expressions": 1,
+      "babel/valid-typeof": 1
     }
 };
