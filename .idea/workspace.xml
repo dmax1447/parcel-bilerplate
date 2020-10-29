@@ -11,33 +11,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="65e6045c-e27e-4f7b-8cc8-2eb5d905cefe" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.env" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.env.production" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/js/maps.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/js/person.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/js/singleton.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/js/static.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/js/swiper.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/layout/map.pug" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/pattern.pug" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/swiper.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/scss/components/map.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/scss/components/menu.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/scss/components/page.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/scss/components/pattern.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/scss/components/swiper.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.eslintrc.js" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintrc.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/header/header.pug" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/header/header.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/js/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/js/observer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/observer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/layout/default.pug" beforeDir="false" afterPath="$PROJECT_DIR$/src/layout/default.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/index.pug" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/map.pug" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/map.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/styles.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/styles.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/swiper.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/swiper.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/components/swiper.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/components/swiper.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,6 +40,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../htmlAcademy/cat-energy-16" />
@@ -119,7 +96,7 @@
       <workItem from="1603543711686" duration="3354000" />
       <workItem from="1603572158753" duration="718000" />
       <workItem from="1603613272902" duration="623000" />
-      <workItem from="1604001896960" duration="2525000" />
+      <workItem from="1604001896960" duration="4601000" />
     </task>
     <task id="LOCAL-00001" summary="добавит новый конфиг с дефолтным лейаутом, обновит зависимости">
       <created>1601114688599</created>
@@ -149,7 +126,14 @@
       <option name="project" value="LOCAL" />
       <updated>1602478200746</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="massiv update + swiper">
+      <created>1604004793412</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1604004793412</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -168,11 +152,13 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="добавит новый конфиг с дефолтным лейаутом, обновит зависимости" />
     <MESSAGE value="обновит контент" />
     <MESSAGE value="добавит imagemin в сборку" />
     <MESSAGE value="add some stuff" />
-    <option name="LAST_COMMIT_MESSAGE" value="add some stuff" />
+    <MESSAGE value="massiv update + swiper" />
+    <option name="LAST_COMMIT_MESSAGE" value="massiv update + swiper" />
   </component>
   <component name="WindowStateProjectService">
     <state x="361" y="76" key="#Deployment" timestamp="1603038829324">
