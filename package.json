@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "parcel src/pages/index.pug",
     "dev-html": "parcel src/pages/swiper.html",
-    "build": "parcel build src/pages/*.pug",
+    "build": "parcel build src/pages/index.pug --public-url=. ",
     "test-scss": "stylelint src/scss/**/*.scss",
     "test-js": "eslint src/js/**/*.js",
     "test": "npm run test-scss && npm run test-js"
@@ -31,6 +31,8 @@
   "dependencies": {
     "axios": "^0.20.0",
     "dotenv": "^8.2.0",
+    "inputmask": "^5.0.5",
+    "jquery": "^3.5.1",
     "swiper": "^6.3.4"
   }
 }
