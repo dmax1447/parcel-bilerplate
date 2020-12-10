@@ -11,19 +11,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="65e6045c-e27e-4f7b-8cc8-2eb5d905cefe" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/js/forms.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/js/vendors/jquery-inputmask.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/layout/simple.pug" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/forms.pug" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/scss/components/form.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/header/header.pug" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/header/header.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/sidebar/sidebar.pug" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/sidebar/sidebar.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/index.pug" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/components/menu.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/components/menu.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/styles.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/styles.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/js/forms.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/forms.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/forms.pug" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/forms.pug" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/components/form.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/components/form.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -159,7 +150,8 @@
       <workItem from="1603613272902" duration="623000" />
       <workItem from="1604001896960" duration="4795000" />
       <workItem from="1607242629527" duration="616000" />
-      <workItem from="1607243511048" duration="14781000" />
+      <workItem from="1607243511048" duration="14848000" />
+      <workItem from="1607624308406" duration="7427000" />
     </task>
     <task id="LOCAL-00001" summary="добавит новый конфиг с дефолтным лейаутом, обновит зависимости">
       <created>1601114688599</created>
@@ -203,7 +195,14 @@
       <option name="project" value="LOCAL" />
       <updated>1604006667578</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="fix build and add forms">
+      <created>1607320526222</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1607320526222</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -229,6 +228,7 @@
     <MESSAGE value="add some stuff" />
     <MESSAGE value="massiv update + swiper" />
     <MESSAGE value="upd styles" />
-    <option name="LAST_COMMIT_MESSAGE" value="upd styles" />
+    <MESSAGE value="fix build and add forms" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix build and add forms" />
   </component>
 </project>

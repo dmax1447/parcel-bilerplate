@@ -3,3 +3,21 @@
     border: 2px solid red;
   }
 }
+
+#form2 {
+  max-width: 300px;
+  padding: 20px;
+  outline: 1px solid lightgrey;
+}
+
+.form-group {
+  label {
+    width: 100%;
+    &.valid {
+      color: green;
+    }
+    &.invalid {
+      color: red;
+    }
+  }
+}

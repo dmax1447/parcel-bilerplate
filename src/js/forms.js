@@ -90,4 +90,56 @@ $(document).ready(function() {
   });
 
 
+  const $form = $('#form2');
+  const $fileInputs = $form.find('input[type=file]');
+  const fileInputsDomCollection = $form[0].querySelectorAll('input[type=file]')
+  const $btnSubmit = $form.find('button[type=submit]');
+
+  function onFileInputChange() {
+    setInputValidationStatus(this, isFileInputValid(this));
+  }
+
+  function setInputValidationStatus(input, valid) {
+    const $label = $(input).prev();
+    if (valid) {
+      $label.addClass('valid');
+      $label.removeClass('invalid');
+    } else {
+      $label.addClass('invalid');
+      $label.removeClass('valid');
+    }
+  }
+
+  function getFileTemplate({name}) {
+    return `
+      <li>${name}</li>
+    `.trim();
+  }
+
+  function displayFileList() {
+    const list = [...this.files];
+    const $list = $(this).next()
+    const listElements = list.map(item => getFileTemplate(item)).join('');
+    $list.html(listElements)
+  }
+
+  function isFileInputValid(input) {
+    const minFilesCount = $(input).attr('data-min-files') || 1;
+    const files = [...input.files];
+    const fileSizeLimit = 1000000; //in bytes
+    return files.length >= minFilesCount && files.every(item => item.size < fileSizeLimit)
+  }
+
+  function isFormValid() {
+    const isValid = [...fileInputsDomCollection].every((input) => isFileInputValid(input));
+    $btnSubmit.attr('disabled', !isValid);
+    console.log('is form valid: ', isValid);
+
+  }
+
+  $fileInputs.on('change', onFileInputChange);
+  $fileInputs.on('change', displayFileList);
+  $fileInputs.on('change', isFormValid);
+  console.log(fileInputsDomCollection);
+
 });

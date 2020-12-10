@@ -9,37 +9,50 @@ block content
 
   h3 forms
   p some content
-  form(class="form" id="form1")
+
+  form(class="form" id="form2")
     div(class="form-group")
-      label(for="name") Имя
-      input(class="form-control" id="name" placeholder="Иван")
+      label(for="passport") Фото паспорт
+      input(class="" id="passport" name="passport" type="file" accept='.jpeg, .jpg, .pdf')
+      ul(class="filelist")
     div(class="form-group")
-      label(for="lastname") Фамилия
-      input(class="form-control" id="lastname" placeholder="Петров")
-    div(class="form-group")
-      label(for="email") Email
-      input(class="form-control" type="email" id="email" placeholder="petrov@yandex.ru")
-    div(class="form-group")
-      label(for="phone") Телефон
-      input(type="phone" id="phone" name="phone" class="form-control")
-    div(class="form-group")
-      label(for="address") Адрес
-      input(class="form-control" id="address" name="address")
-    div(class="form-group")
-      label(for="address") Номер карты
-      input(class="form-control" id="card" name="card")
-    div(class="form-group")
-      label(for="address") Рост, см
-      input(class="form-control" id="height" name="height")
-    div(class="form-group")
-      label Страна проживания
-      select(class='js-select2 form-control' name='countries')
-        option(value='ru') Россия
-        option(value='it') Италия
-        option(value='fr') Франция
-        option(value='uk') Великобритания
-      small за последние три года
-    button(type="submit" class="btn btn-primary mr-2") Отправить
-    button(type="button" class="btn") Очистить форму
+      label(for="sts") Стс с 2х сторон
+      input(class="" id="sts" name="passport" type="file" accept='.jpeg, .jpg, .pdf' multiple data-min-files="2")
+      ul(class="filelist")
+    button(type="submit" disabled class="btn btn-primary mr-2") Отправить
+
+  //form(class="form" id="form1")
+  //  div(class="form-group")
+  //    label(for="name") Имя
+  //    input(class="form-control" id="name" placeholder="Иван")
+  //  div(class="form-group")
+  //    label(for="lastname") Фамилия
+  //    input(class="form-control" id="lastname" placeholder="Петров")
+  //  div(class="form-group")
+  //    label(for="email") Email
+  //    input(class="form-control" type="email" id="email" placeholder="petrov@yandex.ru")
+  //  div(class="form-group")
+  //    label(for="phone") Телефон
+  //    input(type="phone" id="phone" name="phone" class="form-control")
+  //  div(class="form-group")
+  //    label(for="address") Адрес
+  //    input(class="form-control" id="address" name="address")
+  //  div(class="form-group")
+  //    label(for="address") Номер карты
+  //    input(class="form-control" id="card" name="card")
+  //  div(class="form-group")
+  //    label(for="address") Рост, см
+  //    input(class="form-control" id="height" name="height")
+  //  div(class="form-group")
+  //    label Страна проживания
+  //    select(class='js-select2 form-control' name='countries')
+  //      option(value='ru') Россия
+  //      option(value='it') Италия
+  //      option(value='fr') Франция
+  //      option(value='uk') Великобритания
+  //    small за последние три года
+  //
+  //  button(type="submit" class="btn btn-primary mr-2") Отправить
+  //  button(type="button" class="btn") Очистить форму
 
   script(src="../js/forms.js")
