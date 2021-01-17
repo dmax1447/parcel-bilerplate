@@ -11,6 +11,10 @@
     "test-js": "eslint src/js/**/*.js",
     "test": "npm run test-scss && npm run test-js"
   },
+  "staticFiles": {
+    "staticPath": "public",
+    "watcherGlob": "**"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
@@ -23,6 +27,7 @@
     "node-sass": "^4.14.1",
     "parcel-bundler": "^1.12.4",
     "parcel-plugin-imagemin": "^4.0.1",
+    "parcel-plugin-static-files-copy": "^2.5.0",
     "pug": "^2.0.4",
     "sass": "^1.27.0",
     "stylelint": "^11.1.1",
